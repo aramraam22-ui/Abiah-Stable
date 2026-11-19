@@ -1,0 +1,84 @@
+*{text-align: center;}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5; /*  المسافة بينن الاسطر */ 
+  color:#efb35f;
+  background:   linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),  url("p1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+  margin: 20px 0 10px;
+  font-size: 40px;
+}
+
+p {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 15px;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+hr {
+  width: 60%;
+  margin: 30px auto;
+  border-top: 2px solid #efb35f;
+}
+
+/* ==== هيدر ترحيبي يشبه التصميم ==== */
+h1{
+  font-size: 80px;
+  margin-top: 90px;
+  text-transform: capitalize;
+  color :#efb35f ;
+}
+
+h2 {
+  font-size: 50px;
+  color: #efb35f;
+  margin-bottom: 20px;
+}
+
+/* ==== الروابط ==== */
+a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ==== قسم القوائم ==== */
+ul {
+  list-style: none;
+  padding: 0;
+  color: #ffffff;
+}
+/*  عشان يصير فيه مسافة بين اللست و يكبر خطه */
+ul li {
+  margin: 10px 0;
+  font-size: 28px ;
+}
+
+/* ==== زر ==== */
+ul li a {
+  background: #efb35f;
+  color: #2d2623;
+  padding: 12px 28px;
+  border-radius: 8px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700; 
+}
+
+/*   حق الزر عشان اذا احد اشر عليه يكبر*/ 
+ul li a:hover {
+  transform: scale(1.04);
+  transition: 0.2s;
+}

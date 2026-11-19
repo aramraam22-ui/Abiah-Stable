@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Abiah Stable</title>
+    <style>
+ *{text-align: center;
+  font-family: "Merriweather", serif;
+
+
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;  
+  color:#efb35f;
+  background:   linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),  url("p1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+h1,h2,h3{
+font-family: "Merriweather" , serif;
+color: #ffffff;
+margin: 20px 10px;
+font-size: 40px;
+}
+
+p {
+  font-family: "Merriweather";
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 15px;
+  color :#efb35f ;
+  font-size: 25px;
+}
+
+hr {
+  width: 60%;
+  margin: 30px auto;
+  border-top: 2px solid #efb35f;
+}
+
+h2 {
+  font-size: 50px;
+  color :#efb35f ;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: #ffffff;
+}
+
+label.required::after{
+content: " *";
+color: #efb35f;
+font-weight: bold;
+}
+
+.buttonColor{
+            background-color: #c19a6b;
+            color: white;
+        }
+    </style>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <br><br>
+    <p>Please fill the required information below to schedule an appointmnet : </p>
+    <form action="action_page.php" method="post">
+
+      <h2>Basic Information About Appointment:</h2>
+      <label for="date" class="required">Schedule an appointment date:</label><br>
+      <input type="date" id="date" name="AppointmentDay" required>
+      <br><br>
+      <label for="duration"  class="required" >Choose a Session Duration and Time:</label> <br>
+      <input type="time" id="duration" name="duration" required> 
+      <br><hr>
+
+      <h2>Booking Type:</h2>
+      <p>Type of Activity:</p>
+      <input type="checkbox" id="train" name="activity[]" value="Training">
+      <label for="train">Training</label>
+      <input type="checkbox" id="riding" name="activity[]" value="RidingExperience">
+      <label for="riding">Riding Experience</label>
+      <input type="checkbox" id="pic" name="activity[]" value="Picturing">
+      <label for="pic">Picturing</label>
+      <input type="checkbox" id="other" name="activity[]" value="Other">
+      <label for="other">Other</label>
+      <br><br>
+      <label for="NumOfPer" class="required">How Many People?</label><br>
+      <input type="number" id="NumOfPer" name="NumberOfPersons" min="1" required>
+      <br><hr>
+
+      <label for= "coach" class="required">Select a Coach:</label><br>
+   <select id="coach" name="Coach" required>
+   <option value="Ahmad">Coach Ahmad </option>
+   <option value="Reem">Coach Reem  Al-Bahr</option>
+   <option value="Khaled">Coach Khaled Al-Najm</option>>
+   </select>
+      <br><br>
+
+      <label for="notes">Comments:</label><br>
+      <textarea id="notes" name="comments" rows="2" cols="30" placeholder="comments"></textarea>
+      <br><br>
+
+      <input type="checkbox" id="termsAndPolicies" name="Terms" required>
+      <label for="termsAndPolicies" class="required">I agree to the Terms and Policies</label>
+      <br><br>
+     
+      <input class = buttonColor type="submit" value="Book" >
+      <input class = buttonColor type="reset" value="Clear">
+
+    </form>
+  </body>
+</html>
